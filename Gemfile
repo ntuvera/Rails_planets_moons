@@ -35,7 +35,7 @@ gem 'spring',        group: :development
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :developtment, :test do
+group :development, :test do
 # Use debugger
   gem 'debugger'
 # Use pry + pry-nav
@@ -43,5 +43,5 @@ group :developtment, :test do
   gem 'pry-nav'
 # Use rSpec testing
   gem 'rspec'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0.0'
 end
