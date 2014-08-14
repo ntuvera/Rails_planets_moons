@@ -1,0 +1,24 @@
+body{
+  color: #FFFFFF;
+  background: #000000;
+}
+
+h1 {
+  text-align: center;
+}
+a.button{
+  color: #FFFFFF;
+  background: #555555;
+  height: 500px;
+  text-decoration: none;
+  padding: 0.75em;
+  border-radius: 10px;
+}
+
+.nav-bar{
+  display: inline-block;
+}
+#nav-new li{
+  display: inline-block;
+  text-decoration: none;
+}
