@@ -7,9 +7,9 @@ h1 {
   text-align: center;
 }
 a.button{
+  width: 100px;
   color: #FFFFFF;
   background: #555555;
-  height: 500px;
   text-decoration: none;
   padding: 0.75em;
   border-radius: 10px;
@@ -18,10 +18,12 @@ a.button{
 .nav-bar{
   float: left;
   height: 500px;
+  width: 25%;
 }
 #nav-new li{
-  display: inline-block;
+  list-style: none;
   text-decoration: none;
+  padding: 1em;
 }
 table{
   display: inline-block;

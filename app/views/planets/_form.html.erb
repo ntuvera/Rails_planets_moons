@@ -9,5 +9,9 @@
   <%= f.number_field :mass %>
   <%= f.label :inhabitable %>
   <%= f.check_box :life %>
-  <%= f.submit %>
+  <%= f.submit :html => { :class => :submit_button }%>
+<% end %>
+
+<%= form_for @planet, :html => { :method => :delete, :class => :submit_button } do |f| %>
+  <%= f.submit :"Delete Planet" %>
 <% end %>

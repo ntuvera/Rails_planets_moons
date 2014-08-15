@@ -1,7 +1,30 @@
 <p>show.html.erb</p>
 
-<p><%= @planet.name %></p>
-
-
-
-
+<table>
+  <tr>
+    <td>
+      <img class='planet-table-pic' src='<%= @planet.image %>'>
+    </td>
+    </tr>
+  <tr>
+    <td>Planet</td>
+    <td><%= @planet.name %></td>
+  </tr>
+  <tr>
+    <td>Diameter</td>
+    <td><%= @planet.diameter %> km</td>
+  </tr>
+  <tr>
+    <td>Mass</td>
+    <td><%= @planet.mass %> kg</td>
+  </tr>
+  <tr>
+    <td>Life Sustaining</td>
+    <% if @planet.life == true%>
+      <td>True</td>
+      <% else %>
+      <td>False</td>
+      <% end %>
+    </td>
+  </tr>
+</table>
