@@ -1,16 +1,34 @@
-<h1> P L A N E T S   &  M O O N S </h1>
 
 <div class="container">
   <div class="nav-bar">
     <ul id="nav-new">
       <li>
-        <a class="button" href="">new planet</a></li>
+        <a class="button" href="planets/new">new planet</a></li>
       <li><a class="button" href="">new moon</a></li>
     </ul>
   </div>
 
-  <div>
-    <table>
+  <div class="content">
+    <% @planets.each do |planet| %>
+    <table class="table-grid">
+      <thead>
+        <tr><img class="planet-table-pic"src="<%= planet.image %>"></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name:</td>
+          <td><a href="/planets/<%= planet.id %>/edit"><%= planet.name %></a></td>
+        </tr>
+        <tr>
+          <td>Diameter in km:</td>
+          <td><%= planet.diameter %> </td>
+        </tr>
+        <tr>
+          <td>Mass in kg:</td>
+          <td><%= planet.mass %> </td>
+        </tr>
+      </tbody>
     </table>
+    <% end %>
   </div>
 </div>

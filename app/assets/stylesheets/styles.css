@@ -16,9 +16,24 @@ a.button{
 }
 
 .nav-bar{
-  display: inline-block;
+  float: left;
+  height: 500px;
 }
 #nav-new li{
   display: inline-block;
   text-decoration: none;
+}
+table{
+  display: inline-block;
+}
+.planet-table-pic{
+  height: 200px;
+  width: 200px;
+}
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
